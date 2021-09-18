@@ -1,0 +1,35 @@
+{
+  "name": "@jtwebb/strip-json-comments",
+  "version": "1.0.0",
+  "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
+  "main": "index.js",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtwebb/strip-json-comments"
+  },
+  "scripts": {
+    "lint": "eslint --fix index.js test/test.spec.js && prettier --write index.js test/test.spec.js",
+    "test": "npm run lint && ava"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@jtwebb/eslint-config": "^1.0.0",
+    "@jtwebb/prettier": "^1.0.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@jtwebb"
+    ]
+  },
+  "prettier": "@jtwebb/prettier"
+}
